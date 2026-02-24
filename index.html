@@ -1,126 +1,120 @@
- <!DOCTYPE html>
- <html lang="en">
-   <head>
-     <meta charset="UTF-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>Justin Nunez | Portfolio</title>
-     <meta
-       name="description"
-       content="Personal website for ADD_HERE, Computer Science student at Queens College."
-     />
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-     <link
-       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-       rel="stylesheet"
-     />
-     <link rel="stylesheet" href="styles.css" />
-     <script src="script.js" defer></script>
-   </head>
--  <body>
--    <header class="site-header">
-+  <body class="page-enter">
-+    <header class="site-header reveal-blur">
-       <a class="brand" href="#home">ADD_HERE</a>
- 
--      <nav aria-label="Main navigation">
--        <ul class="nav-links">
--          <li><a href="#about">About</a></li>
--          <li><a href="#experience">Experience</a></li>
--          <li><a href="#contact">Contact</a></li>
--        </ul>
--      </nav>
--
-       <div class="theme-controls" role="group" aria-label="Color theme controls">
-         <button class="theme-button" data-theme="system" aria-pressed="true">System</button>
-         <button class="theme-button" data-theme="light" aria-pressed="false">Light</button>
-         <button class="theme-button" data-theme="dark" aria-pressed="false">Dark</button>
-       </div>
-     </header>
- 
-     <main id="home">
--      <section class="hero section-surface">
-+      <section class="hero">
-         <div class="hero-content">
--          <p class="eyebrow">Queens College • Computer Science Student</p>
--          <h1>Hi, I'm <span class="gradient-text">Justin Nunez</span>.</h1>
--          <p class="hero-text">
--            <!-- ADD_HERE: Replace this with a 1–2 sentence personal introduction. -->
-+          <p class="eyebrow reveal-blur">Queens College • Computer Science Student</p>
-+          <h1 class="reveal-blur">Hi, I'm <span class="gradient-text">Justin Nunez</span>.</h1>
-+          <p class="hero-text reveal-blur">
-             I build thoughtful software experiences and I’m always learning through projects,
-             coursework, and collaboration.
-           </p>
--
--          <div id="contact" class="social-links" aria-label="Social links">
--            <a href="https://www.linkedin.com/in/ADD_HERE" target="_blank" rel="noreferrer">LinkedIn</a>
--            <a href="https://github.com/ADD_HERE" target="_blank" rel="noreferrer">GitHub</a>
--            <a href="mailto:ADD_HERE@example.com">Email</a>
--          </div>
-         </div>
- 
--        <div class="profile-card" aria-label="Profile image placeholder">
-+        <div class="profile-card reveal-blur" aria-label="Profile image placeholder">
-           <img
-             src="https://placehold.co/360x360/png?text=Profile+Photo"
-             alt="Profile placeholder"
-           />
--          <!-- ADD_HERE: Replace the src above with profile image path/URL. -->
-         </div>
-       </section>
- 
--      <section id="about" class="section-surface content-section">
--        <h2>About</h2>
--        <p>
--          <!-- ADD_HERE: Replace this paragraph with bio, interests, and goals. -->
-+      <section id="about" class="content-section">
-+        <h2 class="reveal-blur">About</h2>
-+        <p class="reveal-blur">
-           I'm currently studying Computer Science at Queens College, with a focus on building
-           practical applications and growing a strong software engineering foundation.
-         </p>
-       </section>
- 
--      <section id="experience" class="section-surface content-section">
--        <h2>Experience</h2>
--        <!-- ADD_HERE: Add internships, projects, research. -->
--        <div class="experience-placeholder">
--          <p>experience entries will go here soon.</p>
--        </div>
-+      <section id="experience" class="content-section">
-+        <h2 class="reveal-blur">Experience</h2>
-+        <p class="reveal-blur">Experience entries will go here soon.</p>
-+      </section>
-+
-+      <section id="education" class="content-section">
-+        <h2 class="reveal-blur">Education</h2>
-+        <ul class="link-list reveal-blur">
-+          <li>
-+            <a href="https://www.qc.cuny.edu/" target="_blank" rel="noreferrer">Queens College, CUNY</a>
-+            <span>B.S. in Computer Science (In Progress)</span>
-+          </li>
-+        </ul>
-+      </section>
-+
-+      <section id="certifications" class="content-section">
-+        <h2 class="reveal-blur">Certifications</h2>
-+        <ul class="link-list reveal-blur">
-+          <li>
-+            <a href="https://www.credly.com/" target="_blank" rel="noreferrer">IT</a>
-+          </li>
-+          <li>
-+            <a href="https://www.coursera.org/" target="_blank" rel="noreferrer">Microsoft Data Analysis</a>
-+          </li>
-+        </ul>
-       </section>
-     </main>
-+
-+    <nav class="floating-dock" aria-label="Quick links">
-+      <a class="dock-link" href="#home">Home</a>
-+      <a class="dock-link" href="https://www.linkedin.com/in/ADD_HERE" target="_blank" rel="noreferrer">LinkedIn</a>
-+      <a class="dock-link" href="https://github.com/ADD_HERE" target="_blank" rel="noreferrer">GitHub</a>
-+      <a class="dock-link" href="mailto:ADD_HERE@example.com">Email</a>
-+    </nav>
-   </body>
- </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image" href="favicon.png">
+  <title>Justin Nunez's Personal Website</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" id="themeToggle">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+
+  <div class="page">
+
+    <!-- Side Nav (fixed) -->
+    <aside class="side-nav">
+      <a href="#home" title="Home"><i class="fa-solid fa-house"></i></a>
+      <a href="https://linkedin.com/in/nunezjustin" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/Justinn19" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:Jnun5615@email.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+
+      <!-- Hero -->
+      <section id="home" class="reveal hero">
+        <img src="profile.jfif" alt="Profile" class="profile-pic">
+        <div class="hero-text">
+          <h1>Hi, I'm Justin!</h1>
+          <p class="role">Computer Science Student · Queens College</p>
+          <p class="lead">I build clean, accessible web experiences and enjoy learning modern coding patterns.</p>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="reveal">
+        <h2>About</h2>
+        <p>
+          Minimalist site inspired by modern personal sites. I focus on clarity, performance, and readable design.
+        </p>
+      </section>
+
+      <!-- Education -->
+      <section class="reveal">
+        <h2>Education</h2>
+
+        <div class="uniform-grid">
+          <div class="uniform-card">
+            <img src="education1.png" alt="Queens College" class="card-logo">
+            <div class="card-content">
+              <h3>Queens College</h3>
+              <span class="date-range">B.A. in Computer Science · 2023-2027</span>
+              <button class="dropdown-toggle" data-toggle="edu-1">
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="dropdown-menu" id="edu-1">
+                <a href="https://www.qc.cuny.edu/" target="_blank">More info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section class="reveal">
+        <h2>Certifications</h2>
+
+        <div class="uniform-grid">
+          <div class="uniform-card">
+            <img src="cert1.png" alt="Certification 1" class="card-logo">
+            <div class="card-content">
+              <h3>IT Specialist</h3>
+              <span class="issuer">Certiport - A Pearson VUE Business</span>
+              <button class="dropdown-toggle" data-toggle="cert-1">
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="dropdown-menu" id="cert-1">
+                <a href="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=468&cvid=pVz+02asj7iILm5JCGOH0w==" target="_blank">View certificate</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="uniform-card">
+            <img src="cert2.png" alt="Certification 2" class="card-logo">
+            <div class="card-content">
+              <h3>Career Essentials in Data Analysis</h3>
+              <span class="issuer">Microsoft</span>
+              <button class="dropdown-toggle" data-toggle="cert-2">
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="dropdown-menu" id="cert-2">
+                <a href="https://www.linkedin.com/learning/certificates/4399f61a672594f5b4cd25e4dd3989608800d87805d5dc6013fa066015db34eb" target="_blank">View certificate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="reveal">
+        <h2>Contact</h2>
+        <p>Reach me via email or LinkedIn ~ happy to connect.</p>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
