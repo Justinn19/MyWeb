@@ -1,0 +1,126 @@
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Justin Nunez | Portfolio</title>
+     <meta
+       name="description"
+       content="Personal website for ADD_HERE, Computer Science student at Queens College."
+     />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+       rel="stylesheet"
+     />
+     <link rel="stylesheet" href="styles.css" />
+     <script src="script.js" defer></script>
+   </head>
+-  <body>
+-    <header class="site-header">
++  <body class="page-enter">
++    <header class="site-header reveal-blur">
+       <a class="brand" href="#home">ADD_HERE</a>
+ 
+-      <nav aria-label="Main navigation">
+-        <ul class="nav-links">
+-          <li><a href="#about">About</a></li>
+-          <li><a href="#experience">Experience</a></li>
+-          <li><a href="#contact">Contact</a></li>
+-        </ul>
+-      </nav>
+-
+       <div class="theme-controls" role="group" aria-label="Color theme controls">
+         <button class="theme-button" data-theme="system" aria-pressed="true">System</button>
+         <button class="theme-button" data-theme="light" aria-pressed="false">Light</button>
+         <button class="theme-button" data-theme="dark" aria-pressed="false">Dark</button>
+       </div>
+     </header>
+ 
+     <main id="home">
+-      <section class="hero section-surface">
++      <section class="hero">
+         <div class="hero-content">
+-          <p class="eyebrow">Queens College • Computer Science Student</p>
+-          <h1>Hi, I'm <span class="gradient-text">Justin Nunez</span>.</h1>
+-          <p class="hero-text">
+-            <!-- ADD_HERE: Replace this with a 1–2 sentence personal introduction. -->
++          <p class="eyebrow reveal-blur">Queens College • Computer Science Student</p>
++          <h1 class="reveal-blur">Hi, I'm <span class="gradient-text">Justin Nunez</span>.</h1>
++          <p class="hero-text reveal-blur">
+             I build thoughtful software experiences and I’m always learning through projects,
+             coursework, and collaboration.
+           </p>
+-
+-          <div id="contact" class="social-links" aria-label="Social links">
+-            <a href="https://www.linkedin.com/in/ADD_HERE" target="_blank" rel="noreferrer">LinkedIn</a>
+-            <a href="https://github.com/ADD_HERE" target="_blank" rel="noreferrer">GitHub</a>
+-            <a href="mailto:ADD_HERE@example.com">Email</a>
+-          </div>
+         </div>
+ 
+-        <div class="profile-card" aria-label="Profile image placeholder">
++        <div class="profile-card reveal-blur" aria-label="Profile image placeholder">
+           <img
+             src="https://placehold.co/360x360/png?text=Profile+Photo"
+             alt="Profile placeholder"
+           />
+-          <!-- ADD_HERE: Replace the src above with profile image path/URL. -->
+         </div>
+       </section>
+ 
+-      <section id="about" class="section-surface content-section">
+-        <h2>About</h2>
+-        <p>
+-          <!-- ADD_HERE: Replace this paragraph with bio, interests, and goals. -->
++      <section id="about" class="content-section">
++        <h2 class="reveal-blur">About</h2>
++        <p class="reveal-blur">
+           I'm currently studying Computer Science at Queens College, with a focus on building
+           practical applications and growing a strong software engineering foundation.
+         </p>
+       </section>
+ 
+-      <section id="experience" class="section-surface content-section">
+-        <h2>Experience</h2>
+-        <!-- ADD_HERE: Add internships, projects, research. -->
+-        <div class="experience-placeholder">
+-          <p>experience entries will go here soon.</p>
+-        </div>
++      <section id="experience" class="content-section">
++        <h2 class="reveal-blur">Experience</h2>
++        <p class="reveal-blur">Experience entries will go here soon.</p>
++      </section>
++
++      <section id="education" class="content-section">
++        <h2 class="reveal-blur">Education</h2>
++        <ul class="link-list reveal-blur">
++          <li>
++            <a href="https://www.qc.cuny.edu/" target="_blank" rel="noreferrer">Queens College, CUNY</a>
++            <span>B.S. in Computer Science (In Progress)</span>
++          </li>
++        </ul>
++      </section>
++
++      <section id="certifications" class="content-section">
++        <h2 class="reveal-blur">Certifications</h2>
++        <ul class="link-list reveal-blur">
++          <li>
++            <a href="https://www.credly.com/" target="_blank" rel="noreferrer">IT</a>
++          </li>
++          <li>
++            <a href="https://www.coursera.org/" target="_blank" rel="noreferrer">Microsoft Data Analysis</a>
++          </li>
++        </ul>
+       </section>
+     </main>
++
++    <nav class="floating-dock" aria-label="Quick links">
++      <a class="dock-link" href="#home">Home</a>
++      <a class="dock-link" href="https://www.linkedin.com/in/ADD_HERE" target="_blank" rel="noreferrer">LinkedIn</a>
++      <a class="dock-link" href="https://github.com/ADD_HERE" target="_blank" rel="noreferrer">GitHub</a>
++      <a class="dock-link" href="mailto:ADD_HERE@example.com">Email</a>
++    </nav>
+   </body>
+ </html>
