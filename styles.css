@@ -299,11 +299,9 @@ h2{font-size:20px;margin:0 0 12px 0}
   transform-origin:70% 70%;
 }
 .reveal.visible .wave-hand{
-  animation:wave-hand .75s ease-in-out 0s 4;
+  animation:wave-hand .75s ease-in-out 0s 7;
 }
-.reveal.visible .coming-soon-note{
-  animation:soon-fade 4.2s ease forwards;
-}
+
 @keyframes wave-hand{
   0%{transform:rotate(0deg)}
   25%{transform:rotate(16deg)}
