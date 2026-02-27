@@ -23,6 +23,7 @@
 
 html{height:100%;}
 body{
+    -webkit-font-smoothing: antialiased;
     padding-bottom: 70px;
     min-height:100vh;
     margin:0;
@@ -81,7 +82,8 @@ body.loaded .page{filter:blur(0)}
   background:transparent;color:var(--text);text-decoration:none;position:relative;
   transition:background .2s ease;box-shadow:none;
 }
-.bottom-nav a:hover{background:rgba(108,92,231,0.15)}
+.bottom-nav a:hover{background:rgba(108,92,231,0.15);transform: translateY(-2px); /* Lifts the button up */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Adds a soft shadow */}
 
 /* tooltip above icon on hover (uses title attribute) */
 .bottom-nav a::before{
@@ -100,8 +102,8 @@ main{margin:0 auto;max-width:800px;padding:72px 24px 100px 24px}
   width:120px;height:120px;border-radius:999px;object-fit:cover;box-shadow:0 8px 24px rgba(12,14,20,0.08);
   transition:transform .3s ease,box-shadow .3s ease
 }
-.profile-pic:hover{transform:scale(1.08);box-shadow:0 8px 24px rgba(12,14,20,0.12)}
-.hero-text h1{font-size:42px;margin:0 0 6px 0;font-weight:800;letter-spacing:-0.6px;font-family:Space Grotesk, Inter, sans-serif}
+.profile-pic:hover{transform:scale(1.12);box-shadow:0 8px 24px rgba(12,14,20,0.12)}
+.hero-text h1{font-size:46px;margin:0 0 6px 0;font-weight:900;letter-spacing:-0.6px;font-family:Space Grotesk, Inter, sans-serif}
 .hero-text .role{margin:0;color:var(--muted);font-weight:600}
 .lead{margin-top:12px;color:var(--muted);max-width:60ch}
 
@@ -151,7 +153,7 @@ h2{font-size:20px;margin:0 0 12px 0}
 
 /* Responsive adjustments */
 @media (max-width:768px){
-  .hero-text h1{font-size:30px}
+  .hero-text h1{font-size:33px}
   main{padding:48px 18px 100px 18px}
   .profile-pic{width:96px;height:96px}
   .hero{flex-direction:column;align-items:center;text-align:center}
@@ -159,3 +161,4 @@ h2{font-size:20px;margin:0 0 12px 0}
 
 /* Utility */
 .muted{color:var(--muted)}
+
