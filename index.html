@@ -101,10 +101,54 @@
         </div>
       </section>
 
+      <!-- Quote -->
+      <section class="reveal quote-section" aria-label="Favorite quote">
+        <p
+          class="quote-main"
+          data-quote="Talk is cheap, show me the code"
+        >
+          Talk is cheap, show me the code
+        </p>
+        <p class="quote-author">- Linus Torvalds</p>
+      </section>
+
+      <!-- Projects -->
+      <section class="reveal projects-section" aria-label="Projects">
+        <h2>Projects</h2>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-media" aria-hidden="true">
+              <span class="project-media-label">Project Preview</span>
+            </div>
+            <div class="project-body">
+              <h3>Coming Soon <span class="wave-hand" aria-hidden="true">👋</span></h3>
+              <p class="coming-soon-note">A bigger build is in progress and will be added here soon.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <!-- Contact -->
       <section class="reveal">
         <h2>Contact</h2>
-        <p>Reach me via email or LinkedIn ~ happy to connect.</p>
+        <p class="contact-intro">Reach out directly here. I usually reply within 1-2 days.</p>
+        <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="80c816b8-981e-44a3-bef3-ad9604d8a927"> <!-- Public API key for Web3Forms -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+
+          <label class="contact-label" for="contactName">Name</label>
+          <input id="contactName" class="contact-input" type="text" name="name" placeholder="Your name" required>
+
+          <label class="contact-label" for="contactEmail">Email</label>
+          <input id="contactEmail" class="contact-input" type="email" name="email" placeholder="you@example.com" required>
+
+          <label class="contact-label" for="contactMessage">Message</label>
+          <textarea id="contactMessage" class="contact-textarea" name="message" placeholder="What would you like to talk about?" rows="5" required></textarea>
+
+          <button class="contact-submit" type="submit">Send message</button>
+          <p id="contactStatus" class="contact-status" aria-live="polite"></p>
+        </form>
       </section>
 
     </main>
