@@ -1,6 +1,6 @@
-/* Fonts + Theme variables */
+/* Base theme tokens */
 :root{
-  /* Uniform off-white background for light/default theme */
+  /* Keep light mode slightly off-white */
   --bg: #fbfbfd;
   --bg-solid: #fbfbfd;
   --text: #0f1115;
@@ -14,8 +14,8 @@
 }
 
 [data-theme="dark"]{
-  /* Flat ChatGPT-like dark background (adjustable) */
-  --bg: #0b1220; /* flat color used for dark theme */
+  /* Dark mode base color */
+  --bg: #0b1220; /* single dark background */
   --bg-solid: #0b1220;
   --text: #eef1f4;
   --muted: rgba(238,241,244,0.78);
@@ -42,7 +42,7 @@ body{
     transition: background 0.45s ease, color 0.45s ease, opacity .9s ease;
 }
 
-/* Subtle blur fade at bottom of viewport */
+/* Bottom fade so the page edge feels softer */
 body::after{
   content:"";position:fixed !important;bottom:0;left:0;right:0;height:180px;
   background:linear-gradient(to bottom, rgba(255,255,255,0), rgba(251,251,253,0.15));
@@ -53,7 +53,7 @@ body::after{
   background:linear-gradient(to bottom, rgba(255,255,255,0), rgba(11,18,32,0.12));
 }
 
-/* Page load subtle blur (on content wrapper so fixed nav stays viewport-fixed) */
+/* Quick load blur on content only (leave fixed nav alone) */
 body{opacity:0;transition:background 0.95s cubic-bezier(.2,.9,.2,1),color 0.95s cubic-bezier(.2,.9,.2,1),opacity .9s ease}
 body.loaded{opacity:1}
 
@@ -70,7 +70,7 @@ body.loaded .page{filter:blur(0)}
 
 .bottom-nav {
   position: fixed;
-  bottom: 20px; /* Gives it a floating look so it's not glued to the edge */
+  bottom: 20px; /* Float it a little above the edge */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -82,7 +82,7 @@ body.loaded .page{filter:blur(0)}
   border-radius: 999px;
   box-shadow: 0 8px 30px rgba(12, 14, 20, 0.12);
   backdrop-filter: blur(var(--glass-blur));
-  z-index: 9999; /* This ensures it stays above your "reveal" sections */
+  z-index: 9999; /* Keep this above reveal sections */
   transition: box-shadow .45s ease, background .6s ease;
   width: fit-content;
 }
@@ -92,9 +92,9 @@ body.loaded .page{filter:blur(0)}
   transition:background .2s ease;box-shadow:none;
 }
 .bottom-nav a:hover{background:rgba(108,92,231,0.15);transform: translateY(-2px); /* Lifts the button up */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Adds a soft shadow */}
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Tiny lift shadow */}
 
-/* tooltip above icon on hover (uses title attribute) */
+/* Tooltip from the link title */
 .bottom-nav a::before{
   content:attr(title);position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%) translateY(6px);
   background:var(--bg-solid);color:var(--text);padding:6px 10px;border-radius:6px;font-size:11px;font-weight:500;
@@ -362,7 +362,7 @@ h2{font-size:20px;margin:0 0 12px 0}
   letter-spacing:0.02em;
 }
 
-/* Cards and grids */
+/* Cards + grids */
 .uniform-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
 .uniform-card{
   display:flex;gap:14px;padding:14px;border-radius:10px;background:transparent;
@@ -394,15 +394,15 @@ h2{font-size:20px;margin:0 0 12px 0}
 }
 .dropdown-menu a:hover{color:var(--accent)}
 
-/* Reveal animation with small stagger support */
+/* Reveal animation (works with stagger delay in JS) */
 .reveal{opacity:0;transform:translateY(26px);filter:blur(8px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.9,.2,1),filter .7s}
 .reveal.visible{opacity:1;transform:none;filter:blur(0)}
 
-/* Theme toggle */
+/* Theme toggle button */
 .theme-toggle{position:fixed;right:24px;top:22px;background:var(--nav-bg);border:none;padding:10px;border-radius:12px;cursor:pointer;z-index:220;backdrop-filter:blur(var(--glass-blur));box-shadow:0 6px 18px rgba(2,6,23,0.08);transition:background .6s ease,color .6s ease,transform .3s ease}
 .theme-toggle i{font-size:14px;color:var(--text);transition:color .6s ease}
 
-/* Responsive adjustments */
+/* Mobile/tablet tweaks */
 @media (max-width:768px){
   .hero-text h1{font-size:33px}
   main{padding:48px 18px 100px 18px}
@@ -414,5 +414,5 @@ h2{font-size:20px;margin:0 0 12px 0}
   .quote-author{font-size:0.8rem}
 }
 
-/* Utility */
+/* Utilities */
 .muted{color:var(--muted)}
